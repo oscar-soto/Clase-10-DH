@@ -47,22 +47,57 @@ header {
   width: 300px;
   background-color: #F3F3F3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px 15px 0 0;
+  overflow: hidden;
 }
 .batman {
+  position: relative;
+  height: 200px;
   background-image: url(../img/bg_batman.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .quinn {
-  background-image: url(../img/bg_quinn.png);
-}
-.card_header {
-  background-repeat: no-repeat;
+  position: relative;
   height: 200px;
+  background-image: url(../img/bg_quinn.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-.card_body {
-  padding: 18px 16px;
-  height: 500px;
+.card__header {
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  background: none;
+  border: none;
+}
+.card__body {
+  position: relative;
+  padding: 70px 16px 18px;
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
   align-items: center;
+  font-weight: 400;
+}
+.card__body img {
+  position: absolute;
+  top: -60px;
+  border-radius: 999999px;
+}
+.card__body h3 {
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+.card__body p {
+  color: #333;
+  margin-bottom: 33px;
+}
+.card__body button {
+  padding: 15px 37px;
+  color: #FFF;
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif;
+  border: none;
+  background-color: #00669F;
 }
